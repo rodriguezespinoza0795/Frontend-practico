@@ -69,7 +69,7 @@
     border-radius: 8px;
     height: 30px;
     font-size: var(--md);
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     text-indent: 10px;
     width: 300px;
 }
@@ -128,3 +128,45 @@
     text-decoration: none;
 }
 /*EMAIL SEND*/
+
+/*LOGIN*/
+.form a {
+    color: var(--hospital-green);
+    text-decoration: none;
+    margin-bottom: 54px;
+    text-align: center;
+    font-size: var(--sm);
+}
+
+.secondary-button {
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 24px;
+}
+
+@media (min-width: 640px) {
+    .secondary-button {
+        position: relative;
+    }
+}
+/*LOGIN*/
+
+/*MY PROFILE*/
+.text {
+    color: var(--very-light-pink);
+    height: 30px;
+    font-size: var(--md);
+    margin-bottom: 20px;
+    width: 300px;
+}
+/*MY PROFILE*/
