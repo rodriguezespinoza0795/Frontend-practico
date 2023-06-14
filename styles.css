@@ -20,10 +20,12 @@
 /*HEADER*/
 header {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    padding: 10px 25px;
 }
 
 .menu-desktop {
+    display: none;
     width: 140px;
     height: auto;
     border: 1px solid var(--very-light-pink);
@@ -53,6 +55,77 @@ header {
 .menu-desktop li:last-child a {
     color: var(--hospital-green);
     font-size: var(--sm);
+}
+
+.nav-logo {
+    width: 100px;
+}
+
+.navbar--left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar--left ul {
+    display: none;
+    list-style: none;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar--right {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar--left ul a, .navbar--right a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.navbar--left ul a:hover, 
+.navbar--right a:hover {
+    color: var(--hospital-green);
+    border: 1px solid var(--hospital-green);
+}
+
+.navbar-shopping-cart {
+    position: relative;
+}
+
+.navbar-shopping-cart div {
+    width: 16px;
+    height: 16px;
+    background-color: var(--hospital-green);
+    border-radius: 50%;
+    font-size: var(--sm);
+    font-weight: bold;
+    position: absolute;
+    top: -6px;
+    right: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 800px) {
+    .navbar--left ul {
+        display: flex;
+    }
+
+    .navbar--left {
+        gap: 10px;
+    }
+
+    .nav-menu-icon {
+        display: none;
+    }
 }
 
 /*HEADER*/
